@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(228, 228, 228);
+  overflow-y: hidden;
+}
+html {
+  background-color: rgb(6, 6, 46);
+}
+#app-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: .5rem;
+
+}
+.panel {
+  min-width: 5vw;
+  height: 100%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+.main {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin: 0 2rem;
+}
+.message-history {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+.message-block {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: start;
+  margin: 1rem .5rem;
+}
+.message-avatar {
+  width: 70px;
+  height: 70px;
+  background-color: lightblue;
+  color: black;
+  border: 4px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.message-content {
+  background-color: rgba(27, 27, 27, 0.3);
+  width: 90%;
+  margin-left: 2rem;
+  padding: 1rem 2rem 1rem 1.5rem;
+  font-size: large;
+}
+.message-content h3 {
+  text-transform: uppercase;
+}
+.message-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.message-input {
+  width: 90%;
+  height: 70px;
+  background-color: white;
+  border-radius: .5rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: .5rem;
+}
+.message-send {
+  width: 70px;
+  height: 70px;
+  background-color:dodgerblue;
+  fill: white;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  padding: .5rem;
+}
+.right {
+  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-icon{
+  margin: 1rem 0;
+  fill: rgba(233, 233, 233, 0.7);
+}
+.active {
+  fill: white;
+}
+.player-card {
+  width: 100%;
+  height: 50%;
+  margin: .5rem .5rem 0 .5rem;
+  border-radius: .5rem;
+  background: rgba(233, 233, 233, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-badge {
+  display: flex;
+  flex-direction: column;
+}
+.player-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: lightblue;
+  color:rgb(6, 6, 46);
+  width: 200px;
+  height: 200px;
+}
+.player-name {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
