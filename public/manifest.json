@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "The Circle UI",
+  "name": "A clone of the UI from Netflix's The Circle",
   "icons": [
     {
       "src": "favicon.ico",
