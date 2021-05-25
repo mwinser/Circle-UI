@@ -1,7 +1,6 @@
 import './App.css';
-import MessageBox from './components/MessageBox';
-import MessageTimeline from './components/MessageTimeline';
 import LeftPanel from './containers/LeftPanel';
+import MainPanel from './containers/MainPanel';
 import RightPanel from './containers/RightPanel';
 
 function App() {
@@ -18,11 +17,7 @@ function App() {
   return (
     <div id="app-container">
       <LeftPanel/>
-      <div className="main panel">
-        <MessageTimeline players={players}/>
-        <MessageBox />
-      
-      </div>
+      <MainPanel players={players}/>
       <RightPanel players={players}/>
       <div className="circle-graphic"></div>
     </div>
