@@ -6,7 +6,7 @@
   overflow-y: hidden;
 }
 html {
-  background-color: rgb(6, 6, 46);
+  background: linear-gradient(165deg, rgb(43, 43, 43) 0%, rgba(114,32,130,1) 64%, rgba(81,129,123,1) 100%);
 }
 #app-container {
   height: 100vh;
@@ -32,7 +32,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0 2rem;
 }
 .message-history {
@@ -49,7 +49,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: top;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 1rem .5rem;
 }
 .message-avatar {
@@ -88,7 +88,7 @@ html {
   color: black;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: .5rem;
 }
 .message-send {
@@ -144,5 +144,30 @@ html {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
   margin-top: 1rem;
+}
+.circle-graphic {
+  position: absolute;
+  left: calc(50% - 22.5vw);
+  top: calc(50% - 22.5vw);
+  width: 45vw;
+  height: 45vw;
+  border-right: 2px solid rgba(135, 201, 255, .8);
+  border-left: 10px solid rgba(235, 135, 255, .8);
+  box-shadow:0 0 30px 30px rgba(228, 228, 228, .5), inset 0 0 30px 30px rgba(228, 228, 228, .5);
+  background: transparent;
+  border-radius: 50%;
+  transform-origin: center;
+  z-index: -1;
+  animation: 10s infinite rotation;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+
 }
